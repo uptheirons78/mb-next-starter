@@ -1,16 +1,15 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className='container'>
       <Head>
         <title>Nextjs Starter Theme</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
+      <main className='main'>
+        <h1 className='title'>
           Personal <a href='https://nextjs.org'>Next.js!</a> Starter Theme
         </h1>
       </main>

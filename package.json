@@ -1,0 +1,22 @@
+{
+  "name": "mb-next-starter",
+  "description": "Nextjs personal starter theme",
+  "author": "Mauro Bono <mauro@maurobono.com> (https://www.maurobono.com/)",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "12.0.7",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uptheirons78/mb-next-starter.git"
+  }
+}

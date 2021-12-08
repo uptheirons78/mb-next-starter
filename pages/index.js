@@ -8,29 +8,43 @@ import { sortByDate } from '../utils';
 
 export default function Home({ posts }) {
   return (
-    <div className='container'>
+    <div>
       <Head>
         <title>Nextjs Starter Theme</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main className='main'>
-        <h1 className='title'>
+      <nav className='navbar mb-4'>
+        <div className='container'>
+          <h2 className='site-title'>CSS Library</h2>
+          <p>My personal lightweight CSS library</p>
+        </div>
+      </nav>
+
+      <main className='container'>
+        <h1 className='pt-1 pb-1 font-xxl'>
           Personal <a href='https://nextjs.org'>Next.js!</a> Starter Theme
         </h1>
-        <section style={{ marginTop: `3rem` }}>
+        <div className='mt-2'>
+          <a href='#' className='btn-primary'>
+            Button
+          </a>
+        </div>
+        <section className='row gap-2'>
           {posts.map((post, index) => {
             const html = marked.parse(post.content);
             const strippedString = html.replace(/(<([^>]+)>)/gi, '');
             const excerptFromHTML = strippedString.substring(0, 180) + '...';
             return (
-              <article key={index}>
-                <h3>{post.frontmatter.title}</h3>
-                <p>{post.frontmatter.excerpt ? post.frontmatter.excerpt : excerptFromHTML}</p>
-                <Link href={`/blog/${post.slug}`}>
-                  <a>Read more &rarr;</a>
-                </Link>
-              </article>
+              <div key={index} className='col-12-sm col-6-md'>
+                <article className='card'>
+                  <h3 className='card-title'>{post.frontmatter.title}</h3>
+                  <p className='card-body'>{post.frontmatter.excerpt ? post.frontmatter.excerpt : excerptFromHTML}</p>
+                  <Link href={`/blog/${post.slug}`}>
+                    <a className='card-link'>Read more &rarr;</a>
+                  </Link>
+                </article>
+              </div>
             );
           })}
         </section>

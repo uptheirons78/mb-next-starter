@@ -1,0 +1,44 @@
+/* theme colors */
+$primary-color: #03b1c4;
+$text-color: #333333;
+$heading-color: #111111;
+
+/* colors palette */
+$colors: (
+  "primary": $primary-color,
+  "black": #000,
+  "white": #fff
+);
+
+/* font families */
+$ff-sans-serif: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+$ff-serif: "Libre Baskerville", Georgia, serif;
+
+/* font sizes */
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 3;
+
+/* font sizes */
+$base-font-weight: 400;
+$medium-font-weight: 700;
+$dark-font-weight: 900;
+
+/* letter spacing */
+$base-letter-spacing: 1px;
+
+/* line heights */
+$heading-line-height: 1.1;
+
+/* spacing */
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+/* borders */
+$base-border-thickness: 1px;
+$base-border-radius: 20px;
+
+/* box-shadows */
+$base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1);

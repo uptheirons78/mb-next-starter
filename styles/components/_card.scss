@@ -1,0 +1,31 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  padding: $base-padding;
+  border: $base-border-thickness solid #ddd;
+  box-shadow: $base-box-shadow;
+  height: 100%;
+
+  .card-title {
+    color: $heading-color;
+    font-size: $base-font-size * 2;
+    font-weight: $dark-font-weight;
+    line-height: $heading-line-height;
+    letter-spacing: $base-letter-spacing;
+  }
+
+  .card-body {
+    // color: $text-color;
+    font-size: $base-font-size * 0.90;
+    padding-top: $base-padding * 2;
+    padding-bottom: $base-padding * 2;
+  }
+
+  .card-link {
+    color: $primary-color;
+    font-size: $base-font-size * 0.90;
+    font-weight: $base-font-weight;
+    margin-top: auto;
+  }
+}

@@ -1,5 +1,22 @@
-@import './colors';
+/* variables and functions */
+@import './functions';
+@import './variables';
+
+/* base and layouts */
 @import './base';
-@import './home';
+@import './breakpoints';
+@import './grid';
+
+/* colors */
+@import './colors';
+
+/* components */
+@import './components/card';
+@import './components/button';
+@import './components/navbar';
+
+/* utilities */
+@import './utilities';
+
 
 
